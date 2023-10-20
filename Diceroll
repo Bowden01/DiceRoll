@@ -1,0 +1,29 @@
+import random
+
+
+numberOfRolls = input('How Many Times Do You Want to roll?') #ask for how many time you want it to roll 
+
+numberOfSides = input('How Many sides Is your dice?') #asks for the number of sides on the dice
+
+numberOfRollsIntegers = int(numberOfRolls) #makes sure the rolls are numbers
+
+numberOfSidesIntegers = int(numberOfSides) #makes sure the dice sides is a number
+
+for rolls in range(numberOfRollsIntegers): #rolls the dice
+
+    randomNumber= random.randrange(numberOfSidesIntegers)+1
+
+    print('Your Roll Is:') #prints 'your rolls is' 
+    print(randomNumber) #shows what number was generated 
+
+    if numberOfSidesIntegers == 20: 
+        if randomNumber == 20:
+            print('Critical Hit') #when the number is 20 it says 'critical hit'
+        elif randomNumber == 1:   #when the number is 1 it says 'critical misses'
+             print('Critical Misses')
+          
+        
+
+
+
+#GeekForGeaks.org
